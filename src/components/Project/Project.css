@@ -1,0 +1,43 @@
+.container.project {
+    width: 33%;
+    object-fit: contain;
+    margin: 0 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.project-img img {
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.project-footer {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container.project:hover img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+@media screen and (max-width:768px){
+    .container.project{
+        width: 100%;
+    }
+}
