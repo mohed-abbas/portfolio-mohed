@@ -1,6 +1,6 @@
 import React , {useEffect} from 'react'
 import "./Project.css";
-import ProjectTest from "/public/projectImages/netflix_clone/netflix-home.png"
+// import ProjectTest from "/public/projectImages/netflix_clone/netflix-home.png"
 import Aos from 'aos';
 function Project({project}) {
 
