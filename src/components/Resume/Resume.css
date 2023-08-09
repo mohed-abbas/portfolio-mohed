@@ -104,8 +104,7 @@ top: -25px;
     margin-top: -70px;
   }
   .details_section {
-    /* flex-direction: column;
-    align-content: center; */
+     flex-wrap: wrap; 
   }
   .arrows {
     /* margin-left: 0; */
@@ -122,21 +121,26 @@ top: -25px;
   }
   .my_details {
     padding-bottom: 1vh;
-    width: 38vw;
-    height: 11vw;
+    width: 100%;
+    height: 50%;
     margin-left: -10%;
     margin: 4.5% 0;
+    padding: 1.5vw !important;
   }
   .box_placement {
     margin-top: 27.5%;
     margin-left: -18%;
   }
   .rSection_1 {
-    /* width: 100%; */
+    width: 100%;
   }
   .experience {
-    flex-direction: column;
+    align-items: flex-start !important;
+    margin-top: 10%;
+    justify-content: center;
   }
+
+
   .expLeft {
     margin-bottom: 8%;
   }
@@ -148,28 +152,52 @@ top: -25px;
     margin-top: -18%;
     font-size: 3vw;
   }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 !important;
+  }
   .icons img {
     width: 5vw;
     margin-right: 5%;
   }
   .rSection_2 {
-    /* width: 100%; */
-    margin-left: 13%;
-    margin-top: 4%;
+    width: 100%;
+    margin-left: 0 !important;
+    /* margin-left: 13%; */
+    /* margin-top: 4%; */
   }
   .testa {
     margin-bottom: 50vh;
   }
   .barDisplay {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 20%;
+    margin-top: 30px;
   }
   .barDiv {
     padding-bottom: 0.5vh;
+    min-width: 45%;
   }
   .barDiv:nth-child(even) {
     margin-left: 0;
   }
+
+  .eduDetails {
+    position: relative;
+    top: -40%;
+    left: 10%;
+}
+.workDetails {
+  position: relative;
+  top: -10%;
+  left: 10%;
+}
 }
 /* Animations */
 @keyframes App-logo-spin {
