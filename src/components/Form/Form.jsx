@@ -19,13 +19,12 @@ const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "service_2zdprjr",
-        "template_kqlgo6u",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "y7J_RYfwWqsFc8GQL"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -49,7 +48,7 @@ const Form = () => {
               className="form-box"
               type="name"
               placeholder="Votre Nom/Prénom"
-              name="name"
+              name="user_name"
               data-aos="fade-right"
               data-aos-once="true"
               required
@@ -58,7 +57,7 @@ const Form = () => {
               className="form-box"
               type="email"
               placeholder="Votre Email"
-              name="email"
+              name="user_email"
               data-aos="fade-left"
               data-aos-once="true"
               required
@@ -76,9 +75,9 @@ const Form = () => {
               required
             />
           </div>
-          <div>
+          
             <Button classes="btn-round" text="Envoyer" />
-          </div>
+          
           <ToastContainer />
         </form>
       </div>

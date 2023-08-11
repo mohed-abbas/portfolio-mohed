@@ -38,7 +38,7 @@ const Resume = () => {
           <div className="eduDetails">
             {information.map((info) => {
               return (
-                <div className="my_details">
+                <div className="my_details" key={info.id}>
                   <p>
                     <span className="details_bold">{info.level}</span>
                     <span className="details_normal"> ({info.year})</span>
@@ -53,7 +53,7 @@ const Resume = () => {
             <div className="workDetails">
             {fieldExperience.map((fieldExp) => {
                 return (
-                  <div className="my_details">
+                  <div className="my_details" key={fieldExp.id}>
                     <p>
                       <span className="details_bold">{fieldExp.post}</span>
                       <span className="details_normal"> ({fieldExp.year})</span>
@@ -72,7 +72,7 @@ const Resume = () => {
           <div data-aos="fade-right" className="experience">
             {experience.map((exp) => {
               return (
-                <span className={exp.classname}>
+                <span className={exp.classname} key={exp.id}>
                   <p className="expBold">{exp.year}</p>
                   <p className="expNormal">{exp.title}</p>
                 </span>
@@ -97,7 +97,7 @@ const Resume = () => {
           <div data-aos="fade-right" className="barDisplay">
             {ProgressBarDetails.map((bar) => {
               return (
-                <div className="barDiv">
+                <div className="barDiv" key={bar.title}>
                   <ProgressBar
                     title={bar.title}
                     width={bar.width}

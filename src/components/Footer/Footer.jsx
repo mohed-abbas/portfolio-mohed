@@ -15,27 +15,31 @@ const Footer = () => {
   }, []);
   const icons = [
     {
+      id:1,
       icon: facebook,
       alt: "My Facebook profile link",
       href: "https://www.facebook.com/mohed.abbas.5/",
     },
     {
+      id:2,
       icon: insta,
       alt: "My instagram Profile link",
       href: "https://www.instagram.com/mohed._.abbas/",
     },
     {
+      id:3,
       icon: ln,
       alt: "My Linkedin Profile link",
       href: "https://www.linkedin.com/in/mohed-abbas/",
     },
     {
+      id:4,
       icon: twitter,
       alt: "My twitter Profile link",
       href: "https://twitter.com/mohed332",
     },
-    { icon: fiverr, alt: "My fiverr Profile link",href:"https://www.fiverr.com/mohedabbas" },
-    { icon: mail, alt: "My Email", href: "mailto:mohed332@gmail.com" },
+    { id:5,icon: fiverr, alt: "My fiverr Profile link",href:"https://www.fiverr.com/mohedabbas" },
+    { id:6,icon: mail, alt: "My Email", href: "mailto:mohed332@gmail.com" },
   ];
   return (
     <>
@@ -48,7 +52,7 @@ const Footer = () => {
       <div className="footerIcons">
         {icons.map((icon, index) => {
           return (
-            <div className="footer-icon">
+            <div className="footer-icon" key={icon.id}>
               <a href={icon.href} target="_blank" rel="noreferrer">
                 <img src={icon.icon} alt={icon.alt} />
               </a>

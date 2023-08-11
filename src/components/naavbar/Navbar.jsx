@@ -32,64 +32,55 @@ class Navbar extends Component {
         <div className="navbar-items">
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             <li>
-              <a className="nav-links" href="/">
                 <Link
-                  className="linkss"
+                  className="nav-links"
                   to="/"
                   smooth
                   onClick={this.handleClose}
                 >
                   Home
                 </Link>
-              </a>
             </li>
             <li>
-              <a className="nav-links" href="/#resume">
                 <Link
-                  className="linkss"
+                  className="nav-links"
                   to="/#resume"
                   smooth
                   onClick={this.handleClose}
                 >
                   Resume
                 </Link>
-              </a>
             </li>
             <li>
-              <a className="nav-links" href="/#contact">
                 <Link
-                  className="linkss"
+                  className="nav-links"
                   to="/#contact"
                   smooth
                   onClick={this.handleClose}
                 >
                   Contact
                 </Link>
-              </a>
+
             </li>
             <li>
-              <a className="nav-links" href="/services">
                 <Link
-                  className="linkss"
+                  className="nav-links"
                   to="/services"
                   smooth
                   onClick={this.handleClose}
                 >
                   Services
                 </Link>
-              </a>
             </li>
             <li>
-              <a className="nav-links" href="/portfolio">
                 <Link
-                  className="linkss"
+                  className="nav-links"
                   to="/portfolio"
                   smooth
                   onClick={this.handleClose}
                 >
                   Portfolio
                 </Link>
-              </a>
             </li>
           </ul>
         </div>

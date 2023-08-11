@@ -18,11 +18,13 @@ export const images = [
 
 export const information = [
   {
+    id:1,
     level: "Développeur Web et Mobile |Bac+2",
     year: "2020 - 2021",
     institue: "WebForce3",
   },
   {
+    id:2,
     level: "Ecole de la deuxiéme chance  ",
     year: "2018 - 2019",
     institue: "",
@@ -36,13 +38,13 @@ export const information = [
 
 
 export const fieldExperience = [
-  {classname: "expField", year:'2021 - présent', enterprise: "LMS Factory", post: "Développeur Web Full-Stack"},
-  {classname: "expField", year:'2019 - 2020', enterprise: "C.I.A.G.E", post: "Développeur Front-end | STAGE"}
+  {id:1,classname: "expField", year:'2021 - présent', enterprise: "LMS Factory", post: "Développeur Web Full-Stack"},
+  {id:2,classname: "expField", year:'2019 - 2020', enterprise: "C.I.A.G.E", post: "Développeur Front-end | STAGE"}
 ]
 
 export const experience = [
-  { classname: "expLeft", year: "2+", title: "ans d'expérience" },
-  { classname: "expRight", year: "20+", title: "Projets terminés" },
+  { id:1,classname: "expLeft", year: "2+", title: "ans d'expérience" },
+  { id:2,classname: "expRight", year: "20+", title: "Projets terminés" },
 ];
 
 export const ProgressBarDetails = [
