@@ -19,6 +19,7 @@
   font-weight: 700;
   width: 11.5vw;
   height: 2.8vw;
+  text-transform: uppercase;
 }
 .btn-sm {
   padding: 7px 25px;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import baymax from "./../../images/baymaxhome.png";
 // import Lines from "../reusable/Lines";
-import MohedCv from "./../../images/CV-2023-Mohed.pdf";
+import MohedCv from "./../../images/Abbas-Mohed-CV.pdf";
 import Button from "./../reusable/button";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -55,11 +55,11 @@ const Header = () => {
         <div className="mbs-btn">
           <a
             href={MohedCv}
-            download="MohedCv"
+            // download="MohedCv"
             rel="noreferrer"
             target="_blank"
           >
-            <Button classes="btn-round" text="Télécharger CV" />
+            <Button classes="btn-round" text="Voir Mon CV" />
           </a>
         </div>
         <div className="size text-header">

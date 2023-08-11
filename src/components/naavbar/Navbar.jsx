@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Button from "./../reusable/button";
 import logo from "./../../images/logo.png";
-import MohedCv from "./../../images/CV-2023-Mohed.pdf";
+import MohedCv from "./../../images/Abbas-Mohed-CV.pdf";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Navbar.css";
 
@@ -96,11 +96,11 @@ class Navbar extends Component {
         <div className="mb-btn">
           <a
             href={MohedCv}
-            download="MohedCv"
+            // download="MohedCv"
             rel="noreferrer"
             target="_blank"
           >
-            <Button classes="btn-round" text="Télécharger CV" />
+            <Button classes="btn-round" text="Voir Mon CV" />
           </a>
         </div>
       </nav>
