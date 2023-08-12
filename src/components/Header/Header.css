@@ -40,6 +40,9 @@
 }
 
 @media screen and (max-width: 660px) {
+  #home {
+    padding-top: 50px !important;
+  }
   .mbs-btn {
     position: absolute;
     top: 0;

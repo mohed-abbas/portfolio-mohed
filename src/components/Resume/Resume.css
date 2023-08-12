@@ -103,6 +103,9 @@ top: -25px;
   }
 }
 @media screen and (max-width: 960px) {
+  #resume {
+    padding-top: 50px !important;
+  }
   .title {
     margin-top: -70px;
   }

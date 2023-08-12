@@ -45,7 +45,7 @@ const Footer = () => {
     <>
       <div className="footer" data-aos="fade-up">
         <div className="line"></div>
-        <a href="/" data-aos="fade-in">
+        <a href="/" data-aos="zoom-in">
           <img className="footer_logo" src={logo} alt="My Logo" />
         </a>
       </div>
