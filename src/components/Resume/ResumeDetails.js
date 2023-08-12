@@ -39,7 +39,7 @@ export const information = [
 
 export const fieldExperience = [
   {id:1,classname: "expField", year:'2021 - présent', enterprise: "LMS Factory", post: "Développeur Web Full-Stack"},
-  {id:2,classname: "expField", year:'2019', enterprise: "C.I.A.G.E", post: "Développeur Front-end | STAGE"}
+  {id:2,classname: "expField", year:'2020', enterprise: "C.I.A.G.E", post: "Développeur Front-end | STAGE"}
 ]
 
 export const experience = [
