@@ -10,21 +10,36 @@ import "./Navbar.css";
 class Navbar extends Component {
   state = {
     clicked: false,
+    show: false
   };
 
+  
+ 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
   handleClose = () => {
     this.setState({ clicked: false });
   };
+
+  handleScroll = () => {
+    if (window.scrollY > 100) {
+      this.setState({show: true})
+    }else {
+      this.setState({show: false})
+    }
+  }
+
+  componentDidMount(){
+    window.addEventListener("scroll" , this.handleScroll)
+  }
   render() {
     return (
-      <nav className="NavbarItems">
+      <nav className={`NavbarItems ${this.state.show && "nav__color__add"}`} >
         <div>
-          <a href="/">
+          <Link smooth to="/#home">
             <img className="logo" src={logo} alt="MyLogo"></img>
-          </a>
+          </Link>
         </div>
         <div className="menu-icon" onClick={this.handleClick}>
           {this.state.clicked ? <FaTimes /> : <FaBars className="rotate" />}
@@ -34,7 +49,7 @@ class Navbar extends Component {
             <li>
                 <Link
                   className="nav-links"
-                  to="/"
+                  to="/#home"
                   smooth
                   onClick={this.handleClose}
                 >
@@ -87,7 +102,6 @@ class Navbar extends Component {
         <div className="mb-btn">
           <a
             href={MohedCv}
-            // download="MohedCv"
             rel="noreferrer"
             target="_blank"
           >

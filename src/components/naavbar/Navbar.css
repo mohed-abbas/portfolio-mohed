@@ -3,15 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   font-size: 1.2vw;
-
-  /* padding-top: 1vh; */
-  margin-bottom: 10vh;
-  margin-top: 1%;
+  z-index: 999;
+  padding-top: 10px 0;
+  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3 ease-in-out;
+  -moz-transition: all 0.3 ease-in-out;
+  -ms-transition: all 0.3 ease-in-out;
+  -o-transition: all 0.3 ease-in-out;
+}
+.nav__color__add {
+  background :#191414 !important;
 }
 .navbar-items {
-  /* width: 70%; */
-  /* text-align: center; */
   margin: 1vw;
 }
 
@@ -22,7 +29,7 @@
   list-style: none;
   text-align: center;
   width: 70vw;
-  /* justify-content: center; */
+
 }
 ul li {
   font-weight: 400;

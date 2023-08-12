@@ -43,16 +43,16 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="footer">
+      <div className="footer" data-aos="fade-up">
         <div className="line"></div>
-        <a href="/">
+        <a href="/" data-aos="fade-in">
           <img className="footer_logo" src={logo} alt="My Logo" />
         </a>
       </div>
       <div className="footerIcons">
         {icons.map((icon, index) => {
           return (
-            <div className="footer-icon" key={icon.id}>
+            <div className="footer-icon" data-aos="fade-up" key={icon.id}>
               <a href={icon.href} target="_blank" rel="noreferrer">
                 <img src={icon.icon} alt={icon.alt} />
               </a>

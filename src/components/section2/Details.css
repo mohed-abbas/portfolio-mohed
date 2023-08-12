@@ -1,16 +1,15 @@
 @import url("https://rsms.me/inter/inter.css");
 
-.test {
-  /* padding-top: 5%; */
-}
 .section2 {
   display: flex;
   justify-content: space-between;
 }
-
-.details {
-  margin-left: 7vw;
+#details-left {
+  margin-left: 50px;
 }
+/* .details {
+  margin-left: 7vw;
+} */
 
 .details-h2 {
   color: #ffffff;
@@ -35,7 +34,7 @@ ul {
   margin-top: 10vh;
 }
 @media screen and (max-width: 960px) {
-  .test {
+  .details {
     padding-top: 5%;
   }
   .details-h2 {

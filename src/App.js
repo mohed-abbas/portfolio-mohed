@@ -11,9 +11,10 @@ import NotFound from "./components/NotFound/NotFound";
 function App() {
   // xoxo
   return (
-    <div>
+    <div className="main">
+ 
       <BrowserRouter>
-        <ProgressBar bgcolor="#1db954" />
+        <ProgressBar bgcolor="#1db954"/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} exact />

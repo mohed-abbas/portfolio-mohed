@@ -10,10 +10,10 @@ const Details = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="test">
+    <div className="details">
       <Title title="Ce que je fais?" />
       <div className="section2">
-        <div data-aos="zoom-in-up" className="details">
+        <div data-aos="zoom-in-up" className="details" id="details-left">
           <h2 className="details-h2">
             <span>Dévelopment Web: </span>
             <span>Full-Stack</span>

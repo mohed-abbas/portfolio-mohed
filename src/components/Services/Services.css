@@ -10,6 +10,7 @@
   justify-items: center;
   font-size: 1.2vw;
   color: #ffffff;
+  margin-top: 150px;
 }
 @media screen and (max-width: 960px) {
   .services-s img {
