@@ -1,78 +1,59 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import baymax from "./../../images/baymaxhome.png";
-// import Lines from "../reusable/Lines";
+import ThreeLogo from "./ThreeLogo";
 import MohedCv from "./../../images/Abbas-Mohed-CV.pdf";
-import Button from "./../reusable/button";
+import Button from "../reusable/button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import "./Header.css";
+
 const Header = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   const [showElement, setShowElement] = useState(true);
   useEffect(() => {
-    setTimeout(function () {
-      setShowElement(false);
-    }, 2500);
+    const timer = setTimeout(() => setShowElement(false), 2500);
+    return () => clearTimeout(timer);
   }, []);
 
-  const text = " Développeur Web";
+  const text = "Développeur Web";
+
   return (
-    <div id="home">
-      <div className="header">
-        <div className="left-text size text-header">
-          <h4 data-aos="fade-down">
-          Salut! Je suis Mohed. <br />
-            Votre
-            {showElement ? (
-              <span className="typing">{text}</span>
-            ) : (
-              <span className="typing">
-                <Typewriter
-                  loop
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={100}
-                  deleteSpeed={70}
-                  delaySpeed={1000}
-                  words={[
-                    " Développeur Web",
-                    " Concepteur UI/UX",
-                    " Compagne web care",
-                  ]}
-                />
-              </span>
-            )}
-          </h4>
-        </div>
-        <div data-aos="zoom-in-up" className="baymax">
-          <img className="baymax-home" src={baymax} alt="Baymax " />
-        </div>
-        <div className="mbs-btn">
-          <a
-            href={MohedCv}
-            // download="MohedCv"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <Button classes="btn-round" text="Voir Mon CV" />
-          </a>
-        </div>
-        <div className="size text-header">
-          <h4 data-aos="fade-down" className="right-text">
-            {/* Lorem ipsum is simply <br /> dummy text for the printing <br /> and
-            typesetting industry */}
-            Le code est comme l'humour.
-            <br /> Quand il faut l'expliquer, <br /> 
-            C'est mal vraiment mal !.
-          </h4>
-        </div>
+    <section id="home" className="hero">
+      <div data-aos="zoom-in-up">
+        <ThreeLogo />
       </div>
-    </div>
+      <h1>Salut! Je suis Mohed.</h1>
+      <h2 className="typing">
+        {showElement ? (
+          text
+        ) : (
+          <Typewriter
+            loop
+            cursor
+            cursorStyle="_"
+            typeSpeed={100}
+            deleteSpeed={70}
+            delaySpeed={1000}
+            words={[
+              "Développeur Web",
+              "Concepteur UI/UX",
+              "Compagne web care",
+            ]}
+          />
+        )}
+      </h2>
+      <p>
+        Le code est comme l&apos;humour. Quand il faut l&apos;expliquer, c&apos;est mal
+        vraiment mal !
+      </p>
+      <a href={MohedCv} rel="noreferrer" target="_blank">
+        <Button classes="btn-round" text="Voir Mon CV" />
+      </a>
+    </section>
   );
 };
 

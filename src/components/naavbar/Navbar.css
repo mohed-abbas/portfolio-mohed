@@ -16,7 +16,7 @@
   -o-transition: all 0.3 ease-in-out;
 }
 .nav__color__add {
-  background :#191414 !important;
+  background: var(--color-bg) !important;
 }
 .navbar-items {
   margin: 1vw;
@@ -35,19 +35,19 @@ ul li {
   font-weight: 400;
 }
 .nav-links {
-  color: #ffffff;
+  color: var(--color-text);
   text-decoration: none;
   padding: 0 2em;
   text-transform: uppercase;
   cursor: pointer;
 }
 .linkss {
-  color: #ffffff;
+  color: var(--color-text);
   text-decoration: none;
 }
 .menu-icon {
   display: none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 .logo {
   width: 4.5vw;

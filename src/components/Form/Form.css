@@ -8,8 +8,8 @@
   margin-top: 3%;
 }
 .form-box {
-  background-color: #191414;
-  border: 0.05vw solid #ffffff;
+  background-color: var(--color-bg);
+  border: 0.05vw solid var(--color-text);
   width: 20.9vw;
   height: 3.7vw;
   font-size: 1.1vw;
@@ -19,13 +19,13 @@
 }
 .name-email input {
   margin: 0 1.1vw;
-  color: #ffffff;
+  color: var(--color-text);
 }
 .name-email {
   margin-bottom: 1.4vw;
 }
 .text-area textarea {
-  color: #ffffff;
+  color: var(--color-text);
   height: 16.5vw;
   width: 44vw;
   margin-bottom: 1.4vw;
@@ -39,7 +39,7 @@
     width: 30vw;
     height: 6.2vw;
     font-size: 1.3vw;
-    border: 0.12vw solid #ffffff;
+    border: 0.12vw solid var(--color-text);
   }
   .text-area textarea {
     width: 62.18vw;

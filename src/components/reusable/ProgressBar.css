@@ -10,7 +10,7 @@ p {
 .innerBox {
   height: 0.8vw;
   border-radius: 1vw;
-  background-color: #1db954;
+  background-color: var(--color-accent);
   /* animation: loading 2s ease-in-out forwards; */
 }
 .progressbarTitle {

@@ -6,17 +6,31 @@
     url("./fonts/AnekGurmukhi-Bold.ttf") format("truetype");
   font-weight: bold;
 }
+:root {
+  --color-bg: #f8f9fa;
+  --color-text: #111;
+  --color-accent: #1db954;
+  --font-stack: "Inter", sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-bg: #191414;
+  --color-text: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-color: #191414;
-  font-family: "Inter", sans-serif;
-  /* overflow: hidden; */
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-stack);
   overflow-y: scroll;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }

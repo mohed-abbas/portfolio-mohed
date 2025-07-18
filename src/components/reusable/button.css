@@ -1,5 +1,5 @@
 .button {
-  background-color: #1db954;
+  background-color: var(--color-accent);
   color: #ffffff;
   border: none;
   text-align: center;

@@ -14,7 +14,7 @@ function App() {
     <div className="main">
  
       <BrowserRouter>
-        <ProgressBar bgcolor="#1db954"/>
+        <ProgressBar bgcolor="var(--color-accent)"/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} exact />
