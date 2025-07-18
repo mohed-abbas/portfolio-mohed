@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Portfolio Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/yourname/portfolio.git
+cd portfolio
+npm install
+```
+
+Start the development server with:
+
+```bash
+npm start
+```
+
+The app uses React with a minimal component structure. A small Three.js scene renders a rotating cube in the hero section.
+
+---
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
