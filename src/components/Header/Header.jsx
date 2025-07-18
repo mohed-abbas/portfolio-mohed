@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import baymax from "./../../images/baymaxhome.png";
+import ThreeLogo from "./ThreeLogo";
 // import Lines from "../reusable/Lines";
 import MohedCv from "./../../images/Abbas-Mohed-CV.pdf";
 import Button from "./../reusable/button";
@@ -50,7 +50,7 @@ const Header = () => {
           </h4>
         </div>
         <div data-aos="zoom-in-up" className="baymax">
-          <img className="baymax-home" src={baymax} alt="Baymax " />
+          <ThreeLogo />
         </div>
         <div className="mbs-btn">
           <a

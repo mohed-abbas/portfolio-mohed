@@ -88,4 +88,15 @@
     padding-right: 0;
     /* box-shadow: 0 0 140px 90px #ffffff; */
   }
+  .three-logo {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.three-logo {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
